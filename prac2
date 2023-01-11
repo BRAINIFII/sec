@@ -10,15 +10,15 @@ reconnaissance can be conducted quickly and thoroughly.
 3. Initially there are no modules installed. To install the modules, we need to use
 the following commands.
 a. Discovery module
-
+## marketplace install discovery
 b. Recon module
-
+## marketplace install recon
 Importing module
-
+## marketplace install import
 d. Exploitation module
-
+marketplace install exploitation
 e. Reporting module
-
+marketplace install reporting
 Now the required modules are installed.
 
 4. To create a new workspace.
@@ -57,6 +57,10 @@ with network connectivity, that acts as a test to see if a networked device is
 reachable. The ping command sends a request over the network to a specific
 device.
 
+## ping facebook.com
+## ping facebook.com -i 15 -n l
+## ping facebook.com -f -l 1452
+
 Get the Public IP of the given domain. Check the size of the packet which can be
 receive by the destination.
 
@@ -70,6 +74,12 @@ destination, reporting the IP addresses of all the routers it pinged in
 between. Traceroute also records the time taken for each hop the packet
 makes during its route to the destination.
 
+## tracert facebook.com
+
 4. NSLookup : NSLookup (from name server lookup) is a network
 administration command-line tool for querying the Domain Name System
 (DNS) to obtain domain name or IP address mapping, or other DNS records.
+
+## nslookup
+## set type=a
+## www.facebook.com

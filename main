@@ -10,8 +10,9 @@ Prac4(Perform Vulnerability Analysis using Nikto)
 Steps:https://raw.githubusercontent.com/BRAINIFII/sec/master/prac4
 PDF:https://github.com/BRAINIFII/sec/blob/373512a887f779caed8abc53704e88f465990a78/pdf/prac4.pdf
 
-nikto -h http://testphp.vulnweb.com/listproducts.php?cat=1
+## nikto -h http://testphp.vulnweb.com/listproducts.php?cat=1
 # https://cve.mitre.org/
+# https://github.com/daviddias/node-dirbuster/tree/master/lists
 
 Prac5(Sniffing Facebook credentials using Social Engineering Toolkit)
 Steps:https://raw.githubusercontent.com/BRAINIFII/sec/master/prac5

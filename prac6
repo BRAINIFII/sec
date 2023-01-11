@@ -12,8 +12,7 @@ Figure
 3. Change the wireless interface into monitor mode using ‘airmon-ng start wlan0’ command with
 wlan0 as your wireless interface name, as shown in Figure
 
-4. Use ‘airodump’ to find out the SSID on the interface using the command:
-‘airodump-ng -write capture wlan0’
+4. Use ‘airodump’ to find out the SSID on the interface using the command: ‘airodump-ng -write capture wlan0’
 
 5. Use the following command to capture a 4-way handshake by using airmon-ng to monitor traffic on
 the target network using the channel and BSSID values
