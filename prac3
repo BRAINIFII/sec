@@ -1,0 +1,48 @@
+Problem Statement: Enumeration of various services that are running on
+a target machine using Nmap.
+Lab Tasks
+To enumerate services on target machine, perform the following steps:
+1. Launch Kali Linux
+2. Select Applications > Information Gathering > nmap, as shown in the
+Figure.
+Then the following screen will appear, as shown in Figure.
+
+3. Type'nmap –sP 192.xx.xx.xx/2', and press Enter, as shown in Figure
+27.
+Then 'Nmap'will scan all the nodes on the given network range and
+display all the hosts that are running, as shown in Figure.
+
+4. Type'nmap-sS <IP address of the target machine>', and press Enter, as
+shown in Figure (here we have used 192.XX.XX.XX as the IP address).
+Then a Stealthy syn scan will be initiated, and all the open ports that
+are running on the machine will be displayed, as shown in Figure.
+
+Now, we can see all the open ports along with the services. We will
+find the version of each of these services running on the open port by
+performing a syn scan with the version detection switch.
+5. Type 'nmap -sSV -O <IP address of the target machine>', and press
+Enter, as shown in Figure.
+Now, the Nmap performs the scan and displays the versions of the
+services, as shown in Figure.
+
+We have found the enumerated result. We will now save the scan result.
+6. Type 'nmap -sSV -0 <IP address of the target machine> -oN
+Enumeration.txt', and press Enter, as shown in Figure.
+Then following screen will appear, as shown in Figure.
+
+Nmap will now perform Stealthy Scan with version and OS detection, and
+save the result in a text file (Enumeration.txt), which will be located
+on home (root) directory.
+7. Click on Places > Home Folder, as shown in Figure.
+8. Double click on the file Enumeration.txt, as shown in Figure.
+
+Then the following window will appear, as shown in Figure.
+You can also check the scanning result in the command line terminal.
+Type'cat Enumeration.txt', and press Enter, as shown in Figure.
+Then the output of the scanning process will be shown in the command
+line terminal, as shown in Figure 39.
+
+Lab Summary
+In this lab, we have demonstrated how to enumerate the services that
+are running on the target machine and find the vulnerabilities of the
+services.

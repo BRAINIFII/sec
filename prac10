@@ -1,0 +1,54 @@
+In this lab, we will use InSSIDer to check the wireless network strength. You will learn how
+to:
+1. Install and configure InSSIDer.
+2. Check the wireless signal strength.
+
+To carry out this lab, you will require the following:
+1. Windows OS
+2. Web browser with Internet connection
+3. Administrative privileges
+
+To detect the wireless network strength, execute the following steps:
+1. Type https://inssider.en.softonic.com/download in the address bar of a web browser, and press Enter, as shown in Figure 1.
+
+2. In the webpage that opens, click on the link, Download InSSIDer for Windows, as shown in Figure
+
+3. Click on Free Download, as shown in Figure
+
+4. Click on the downloaded files, as shown in Figure
+
+5. In the next screen that appears, click on Next, as shown in Figure
+
+6. In the next screen, click on the Everyone radio button,and then click Next, as shown in Figure
+
+7. In the next screen that appears, click on Next, as shown in Figure
+
+8. Then the following screen will appear, as shown in Figure
+
+9. Then after the files gets installed, the following screen will appear, as shown in Figure 8. Click Close
+
+Then InSSIDer icon will appear on the desktop, as shown in Figure
+
+10. Double click on the InSSIDer icon on the desktop.
+Then the following screen will appear, as shown in Figure 10.
+
+11. Click on the Time Graph tab, as shown in Figure
+
+It will show the time graph of all the available SSID. We need to elect the particular SSID what we need to know
+
+12. Click on the particular SSID as shown in Figure 12. In this lab we have selected WSTREAM AP0 SSID
+
+Now you have to select another SSID for comparison
+
+13. Scroll down the SSID and select WStream AP -1, as shown in Figure.
+
+14. Then the following screen will appear, as shown in Figure
+
+15. Click on the 2.4 GHz channels tab, as shown in Figure
+
+16. It will show 2.4 Ghz channels for two SSIDs,WStreamAP1 and WStream AP0
+
+17. Click on 5 Ghz channel, as shown in Figure.
+Then the following screen will appear as shown in Figure.
+
+Thus, you can see the signal strength for both the SSIDs. In this way, we can analyse wireless network strength with the help of InSSIDer tool

@@ -1,0 +1,75 @@
+A. Recon-ng in Kali Linux.
+Recon-ng is a full-featured Web Reconnaissance framework written in Python.
+Complete with independent modules, database interaction, built in
+convenience functions, interactive help, and command completion, Recon-ng
+provides a powerful environment in which open-source web-based
+reconnaissance can be conducted quickly and thoroughly.
+1. Open Kali Linux Virtual Machine. And Open terminal.
+2. Type Recon-ng to enter the console.
+
+3. Initially there are no modules installed. To install the modules, we need to use
+the following commands.
+a. Discovery module
+
+b. Recon module
+
+Importing module
+
+d. Exploitation module
+
+e. Reporting module
+
+Now the required modules are installed.
+
+4. To create a new workspace.
+
+5. Install the module recon/domains-contacts/whois_pocs and load the installed
+module.
+
+6. Set the option and run the module.
+
+7. Type back and enter the workspace. We will install another module
+recon/profiles-profiles/namechk and load the module to validate the
+user Brandon Stout.
+
+8. Set the option and run the module.
+
+9. Type back and enter the workspace. We will install another module
+recon/profiles-profiles/profiler to check the existence of user Brandon Stout.
+
+10. Set the option and run the module.
+
+11. Generate a Report. We will install another module reporting/html and load
+the module to generate a report in html file.
+
+Set all the options.
+
+Run the module.
+
+12. Html file is generated in given location. Go to the location and double
+click on the file.
+
+Brandon Stout
+
+B. Windows Command Line Utilities
+1. Ping: Ping is a command-line utility, available on virtually any operating system
+with network connectivity, that acts as a test to see if a networked device is
+reachable. The ping command sends a request over the network to a specific
+device.
+
+Get the Public IP of the given domain. Check the size of the packet which can be
+receive by the destination.
+
+Check how much TTL router would take to discard the packet.
+
+2. Tracert using Ping
+
+3. Tracert : Traceroute is a network diagnostic tool used to track in real-time
+the pathway taken by a packet on an IP network from source to
+destination, reporting the IP addresses of all the routers it pinged in
+between. Traceroute also records the time taken for each hop the packet
+makes during its route to the destination.
+
+4. NSLookup : NSLookup (from name server lookup) is a network
+administration command-line tool for querying the Domain Name System
+(DNS) to obtain domain name or IP address mapping, or other DNS records.

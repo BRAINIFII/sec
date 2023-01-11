@@ -1,0 +1,16 @@
+To set up Kali Linux for vulnerability scanning and use Nikto to scan for known
+vulnerabilities, perform the following steps:
+1. Log in to Kali Linux and open Terminal, as shown in Figure
+
+2. Type the command nikto -h <URL of website you want to scan> and press Enter, as
+shown in Figure
+
+3. Note a vulnerability number, for example 23654, and open a web browser
+
+4. Type the URL https://cve.mitre.org/ in the browser to open the Common
+Vulnerabilities and Exposures website, as shown in Figure
+
+5. Click on Search CVE List and type your vulnerability number in the text box, as
+shown in Figure and press enter
+
+It will give a list of vulnerability details, as shown in Figure

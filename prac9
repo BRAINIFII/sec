@@ -1,0 +1,47 @@
+To test a website for SQL injection vulnerability, perform the following steps:
+1. Log in to Kali Linux.
+
+2. Open a web browser and enter the URL of the website you want to exploit, as shown
+in Figure 1.
+
+If a URL, for example http://testphp.vulnweb.com/listproducts.php?cat=1,has a GET
+parameter as cat=1, then it is vulnerable to SQL injection attacks.
+
+3. You can check if your website is vulnerable by replacing the value 1 with * in GET
+parameter. If the website results in an error as shown in Figure 2, then it is
+vulnerable.
+
+4. Open Terminal in Kali Linux as shown in Figure 3
+
+5. Type sqlmap -h and press Enter to view the help and the list of parameters passed in
+the SQLMAP, as shown in Figure 4.
+
+6. Type the following command and press Enter to list the information about the
+existing databases, as shown in Figure 5(a), Figure 5(b) and Figure 5(c).
+sqlmap -u http://testphp.vulnweb.com/listproducts.php?cat=1 –dbs
+Enter N when SQLMAP asks to skip payload for other databases except for the
+detected database.
+Enter N again when SQLMAP asks to include all tests.
+
+In output part-3, you can see the executed payloads, available databases and backend
+database version.
+
+7. Type the following command and press Enter to list information about tables present
+in a particular database, as shown in Figure 6(a):
+
+sqlmap -u http://testphp.vulnweb.com/listproducts.php?cat=1 -D acuart – tables
+Figure 6(a) and 6(b) displays the output.
+
+In Figure 6(b), you can see that there are eight tables.
+
+8. Type the following command and press Enter to list information about the columns
+of a particular table, as shown in Figure 7(a):
+sqlmap -u http://testphp.vulnweb.com/listproducts.php?cat=1 -D acuart -T artists
+–columns
+Figure 7(a) and 7(b) displays the output
+
+9. Type the following command and press Enter to dump the data from the columns, as
+shown in Figure 8(a):
+sqlmap -u http://testphp.vulnweb.com/listproducts.php?cat=1 -D acuart -T artists -
+C aname –dump
+Figure 8(a) and 8(b) displays the output.

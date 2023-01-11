@@ -1,0 +1,28 @@
+To carry out this lab, you will require the following:
+1. Kali Linux as the attacker machine
+2. Web browser with Internet connection
+3. Administrative privileges
+
+You can crack a wireless network encrypted with WPA by using the following steps.
+1. Log in to Kali Linux and launch the command terminal
+
+2. First, check if the wireless card is connected or not by using the ‘iwconfig’ command, as shown in
+Figure
+
+3. Change the wireless interface into monitor mode using ‘airmon-ng start wlan0’ command with
+wlan0 as your wireless interface name, as shown in Figure
+
+4. Use ‘airodump’ to find out the SSID on the interface using the command:
+‘airodump-ng -write capture wlan0’
+
+5. Use the following command to capture a 4-way handshake by using airmon-ng to monitor traffic on
+the target network using the channel and BSSID values
+‘airodump-ng -c 3 --bssid 9C:5C:XX:XX:XX:XX -w . wlan0’
+where, ‘-c 3’ is used to specify the channel number 3
+
+6. Now, wait to capture the handshake packet. Once you have captured a packet, you will see the
+output similar to Figure
+
+7. You will see a captured .cap file in your /root location which is a default location
+
+8. Now, run this captured file against a wordlist to crack the WPA key

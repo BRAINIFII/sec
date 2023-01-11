@@ -1,0 +1,27 @@
+To enumerate a webserver by finding files and directories using DirBuster, perform the
+following steps:
+1. Login to Kali Linux machine.
+
+2. Go to Applications -> Kali Linux -> Web Applications -> Web Crawlers -> dirbuster to launch DirBuster as shown in Figure 1.
+
+When it is launched, it opens in a GUI as shown in Figure 2
+
+3. Type the URL of the website you want to scan in the Target URL text field and the port number, as shown in Figure 3.
+
+4. Click on List Info to open a wordlist to be used to find the directories and files as shown in Figure 4.
+
+When you click on List Info, it opens a Brute Forcing List Information window listing all
+the available wordlists with a short description, as shown in Figure 5.
+
+5. Select a list you want to use and click on Browse to open that list, as shown in Figure 6. (You may need to download from github)
+
+6. It will open a Please Select The Directory/File List You Wish To Use window as shown in Figure 7.
+
+7. Browse where your file is saved and select the list by clicking on Select List, as shown in Figure 7.
+
+8. Click on the Start button. When you click on Start, DirBuster starts generating
+GET requests and sending them to the selected URL with a request for each of the files
+and directories listed in the wordlist. Figure 8 shows the scan information.
+
+After running DirBuster for some time, you will see the results in Tree View, as shown in
+Figure 9.

