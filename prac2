@@ -10,45 +10,83 @@ reconnaissance can be conducted quickly and thoroughly.
 3. Initially there are no modules installed. To install the modules, we need to use
 the following commands.
 a. Discovery module
-## marketplace install discovery
+##  marketplace install discovery
 b. Recon module
-## marketplace install recon
+##  marketplace install recon
 Importing module
-## marketplace install import
+##  marketplace install import
 d. Exploitation module
-marketplace install exploitation
+##  marketplace install exploitation
 e. Reporting module
-marketplace install reporting
+##  marketplace install reporting
 Now the required modules are installed.
 
 4. To create a new workspace.
 
-5. Install the module recon/domains-contacts/whois_pocs and load the installed
-module.
+##  workspace create security
+
+5. Install the module recon/domains-contacts/whois_pocs and load the installed module.
+
+##  marketplace install recon/domains-contacts/whois_pocs
 
 6. Set the option and run the module.
+
+##  module load recon/domains-contacts/whois_pocs
+##  options list
+##  run
+##  back
+
 
 7. Type back and enter the workspace. We will install another module
 recon/profiles-profiles/namechk and load the module to validate the
 user Brandon Stout.
 
+##  marketplace install recon/profiles-profiles/namechk
+##  module load recon/profiles-profiles/namechk
+
 8. Set the option and run the module.
+
+##  options set SOURCE Brndon Stout
+##  options list
+##  run
+##  back
+
 
 9. Type back and enter the workspace. We will install another module
 recon/profiles-profiles/profiler to check the existence of user Brandon Stout.
 
+##  marketplace install recon/profiles-profiles/profiler
+##  module load recon/profiles-profiles/profiler
+
 10. Set the option and run the module.
+
+##  options set SOURCE Brndon Stout
+##  options list
+##  run
 
 11. Generate a Report. We will install another module reporting/html and load
 the module to generate a report in html file.
 
+##  back
+##  marketplace install reporting/
+##  module load reporting/html
+##  options list
+
 Set all the options.
+##  options set CREATOR bhakti-dhara
+##  options set CUSTOMER Brndon Stout
+##  options set FILENAME /home/kali/BrndonStout.html
+##  options list
 
 Run the module.
 
+##  run
+
+
 12. Html file is generated in given location. Go to the location and double
 click on the file.
-
+##  exit
+open the file in browser
 Brandon Stout
 
 B. Windows Command Line Utilities
@@ -57,9 +95,9 @@ with network connectivity, that acts as a test to see if a networked device is
 reachable. The ping command sends a request over the network to a specific
 device.
 
-## ping facebook.com
-## ping facebook.com -i 15 -n l
-## ping facebook.com -f -l 1452
+##  ping facebook.com
+##  ping facebook.com -i 15 -n l
+##  ping facebook.com -f -l 1452
 
 Get the Public IP of the given domain. Check the size of the packet which can be
 receive by the destination.
@@ -74,12 +112,12 @@ destination, reporting the IP addresses of all the routers it pinged in
 between. Traceroute also records the time taken for each hop the packet
 makes during its route to the destination.
 
-## tracert facebook.com
+##  tracert facebook.com
 
 4. NSLookup : NSLookup (from name server lookup) is a network
 administration command-line tool for querying the Domain Name System
 (DNS) to obtain domain name or IP address mapping, or other DNS records.
 
-## nslookup
-## set type=a
-## www.facebook.com
+##  nslookup
+##  set type=a
+##  www.facebook.com
