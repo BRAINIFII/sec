@@ -1,44 +1,39 @@
 Prac2(Recon-ng)
 Steps:https://raw.githubusercontent.com/BRAINIFII/sec/master/prac2
-PDF:
+PDF:https://github.com/BRAINIFII/sec/blob/373512a887f779caed8abc53704e88f465990a78/pdf/prac2.pdf
 Script:
 
 Prac3(Enumeration of various services that are running on a target machine using Nmap.)
 Steps:https://raw.githubusercontent.com/BRAINIFII/sec/master/prac3
-PDF:
-Script:
+PDF:https://github.com/BRAINIFII/sec/blob/373512a887f779caed8abc53704e88f465990a78/pdf/prac3.pdf
 
 Prac4(Perform Vulnerability Analysis using Nikto)
 Steps:https://raw.githubusercontent.com/BRAINIFII/sec/master/prac4
-PDF:
-Script:
+PDF:https://github.com/BRAINIFII/sec/blob/373512a887f779caed8abc53704e88f465990a78/pdf/prac4.pdf
+
+nikto -h http://testphp.vulnweb.com/listproducts.php?cat=1
+# https://cve.mitre.org/
 
 Prac5(Sniffing Facebook credentials using Social Engineering Toolkit)
 Steps:https://raw.githubusercontent.com/BRAINIFII/sec/master/prac5
-PDF:
-Script:
+PDF:https://github.com/BRAINIFII/sec/blob/373512a887f779caed8abc53704e88f465990a78/pdf/prac5.pdf
 
 Prac6(Crack WPA encryption using Aircrack-ng in Kali Linux)
 Steps:https://raw.githubusercontent.com/BRAINIFII/sec/master/prac6
-PDF:
-Script:
+PDF:https://github.com/BRAINIFII/sec/blob/373512a887f779caed8abc53704e88f465990a78/pdf/prac6.pdf
 
 Prac7(Enumerate Webserver using DirBuster)
 Steps:https://raw.githubusercontent.com/BRAINIFII/sec/master/prac7
-PDF:
-Script:
+PDF:https://github.com/BRAINIFII/sec/blob/373512a887f779caed8abc53704e88f465990a78/pdf/prac7.pdf
 
 Prac8(Exploit Vulnerability in a Web Server using Metasploit)
 Steps:https://raw.githubusercontent.com/BRAINIFII/sec/master/prac8
-PDF:
-Script:
+PDF:https://github.com/BRAINIFII/sec/blob/373512a887f779caed8abc53704e88f465990a78/pdf/prac8.pdf
 
 Prac9(Use SQLMAP to Test a Website for SQL Injection Vulnerability)
 Steps:https://raw.githubusercontent.com/BRAINIFII/sec/master/prac9
-PDF:
-Script:
+PDF:https://github.com/BRAINIFII/sec/blob/373512a887f779caed8abc53704e88f465990a78/pdf/prac9.pdf
 
 Prac10(Sniff Wi-Fi hot spots and analyse wireless network strength using InSSIDer)
 Steps:https://raw.githubusercontent.com/BRAINIFII/sec/master/prac10
-PDF:
-Script:
+PDF:https://github.com/BRAINIFII/sec/blob/373512a887f779caed8abc53704e88f465990a78/pdf/prac10.pdf

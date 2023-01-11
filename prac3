@@ -1,5 +1,4 @@
-Problem Statement: Enumeration of various services that are running on
-a target machine using Nmap.
+Problem Statement: Enumeration of various services that are running on a target machine using Nmap.
 Lab Tasks
 To enumerate services on target machine, perform the following steps:
 1. Launch Kali Linux
